@@ -45,7 +45,7 @@ public class PessoaDao extends Dao{
                     + " SET codigo_categoria = ? "
                     + " SET codigo_pessoa = ? "
                     + " WHERE id = ? ");
-            stmt.setString(1, obj.getDescricao());
+            stmt.setString(1, obj.getNome());
             stmt.setDate(2, obj.getDataVencimento());
             stmt.setDate(3, obj.getDataPagamento());
             stmt.setDouble(4, obj.getValor());
